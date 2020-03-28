@@ -51,7 +51,7 @@ async function addQuote() {
 
 function clearMenu() {
     theQuoteList.clearList();
-    //localStorage.removeItem("kennel");
+    localStorage.removeItem("quotes");
 }
 
 function deleteSelected() {
