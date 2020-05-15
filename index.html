@@ -2,8 +2,15 @@
     <head>
         <title>Khald&ucircn</title>
         <link rel="stylesheet" href="/css/bootstrap.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="#top">Top</a>
+            <a href="#bottom">Bottom</a>
+        </div>
+        <div id="top"></div>
         <div class=container>
             <h1 class="text-center">Welcome to Khald&ucircn!</h1>
             <!-- Navbar -->
@@ -29,8 +36,12 @@
                                 <a class="dropdown-item" href="https://greeha01.github.io/pages/starting_islands/roovnisi.html">Roovnisi</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://greeha01.github.io/pages/lore.html">Lore</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarLoreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lore</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarLoreDropdown">
+                                <a class="dropdown-item" href="https://greeha01.github.io/pages/lore/dieties.html">Dieties</a>
+                                <a class="dropdown-item" href="#">TBD</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" id="navbarContinentsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Continents</a>
@@ -59,6 +70,8 @@
             </figure>
             <p>This is the website for SirRunner's world, Khald&ucircn. It contains the maps, information and lore than players would end up needing to use the world. Similarly, the website contains a log of the player's adventures, allowing the DM to have a repository of the player's actions, to help adapt the world to the player's actions.</p>
         </div>
+
+        <div id=bottom></div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
