@@ -75,6 +75,7 @@ color: #064579;
     color: white;
     padding: 10px 15px;
     border: none;
+    position: fixed;
   }
   
   .openbtn:hover {
