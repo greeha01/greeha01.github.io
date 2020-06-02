@@ -1,3 +1,5 @@
+// TODO make it work for no #id in URL
+
 window.onload = function() {
     const greaterDieties = ["Uesis", "Fandir", "Akrua", "Irollan", "Tudalle", "Pyrus", "Biara", "Ahriman", "Ornella"];
     const lesserDieties = [];
