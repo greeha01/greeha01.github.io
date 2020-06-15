@@ -1,9 +1,20 @@
 window.onload = function() {
     // used when switching between pages
+    // dieties page
     const greaterDieties = ["Uesis", "Fandir", "Akrua", "Irollan", "Tudalle", "Pyrus", "Biara", "Ahriman", "Ornella"];
     const lesserDieties = [];
     const dieties = ["Greater_Dieties", "Lesser_Dieties"];
+
+    //divine history page
+    const divine_history = ["beginning", "betrayal", "war"];
+
+    //peoples of khaldun page
+    const cultureTypes = ["ceyah", "kohan", "fallen"];
     const ceyahHeroes = ["Astarte", "Belphegor", "Divsha", "Hasanko", "Lazarus", "Melchior", "Praxus", "Sahrbon", "Sebak", "Sijansur", "Vandal", "Vulgari"];
+    const royalistHeroes = [];
+    const nationalistHeroes = [];
+    const councilHeroes = [];
+    
     const urlString = window.location.href;
     const brokenUrl = urlString.split("#");
     let baseId = "#";
@@ -21,18 +32,22 @@ window.onload = function() {
             document.querySelector("#Greater_Dieties").setAttribute("class", "tab-pane fade show active");
             document.querySelector("#Lesser_Dieties").setAttribute("class", "tab-pane fade");
         }
-        else if (lesserDieties.includes(brokenUrl[1])) {
-            // TODO
-            baseId = "#";
-
-            document.querySelector("#Lesser_Dieties-control").setAttribute("class", "nav-link active");
-            document.querySelector("#Greater_Dieties-control").setAttribute("class, nav-link");
-
-            document.querySelector("#Lesser_Dieties").setAttribute("class", "tab-pane fade show active");
-            document.querySelector("#Greater_Dieties").setAttribute("class", "tab-pane fade");
+        else if (divine_history.includes(brokenUrl[1])) {
+            baseId = "#beginning";
+        }
+        else if (cultureTypes.includes(brokenUrl[1])) {
+            baseId = "#ceyah";
         }
         else if (ceyahHeroes.includes(brokenUrl[1])) {
             baseId = "#Astarte";
+
+            document.querySelector("#ceyah-control").setAttribute("class", "nav-link active");
+            document.querySelector("#kohan-control").setAttribute("class", "nav-link");
+            document.querySelector("#fallen-control").setAttribute("class", "nav-link");
+
+            document.querySelector("#ceyah").setAttribute("class", "tab-pane fade show active");
+            document.querySelector("#kohan").setAttribute("class", "tab-pane fade");
+            document.querySelector("#fallen").setAttribute("class", "tab-pane fade");
         }
         else {
             baseId = "#test1";
