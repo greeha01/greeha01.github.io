@@ -99,3 +99,37 @@ function switchNav(id, higherId) {
         document.querySelector(id).setAttribute("class", "tab-pane fade show active");
     }
 }
+
+function switchNav2(id, higherId) {
+    // used when switching active panes in the page itself for Kohan and Fallen
+    let actives = document.querySelectorAll(".active");
+
+    console.log(actives);
+
+
+    if (higherId != null) {
+        let higherIdController = higherId + "-control";
+
+        console.log(higherId);
+        console.log(higherIdController);
+
+        actives[0].setAttribute("class", "nav-link");
+        actives[3].setAttribute("class", "tab-pane fade");
+    
+        document.querySelector(higherIdController).setAttribute("class", "nav-link active");
+        document.querySelector(higherId).setAttribute("class", "tab-pane fade show active");
+    }
+
+    if (id != null) {
+        let idController = id + "-control";
+
+        console.log(id);
+        console.log(idController);
+
+        actives[1].setAttribute("class", "nav-link");
+        actives[2].setAttribute("class", "tab-pane fade");
+    
+        document.querySelector(idController).setAttribute("class", "nav-link active");
+        document.querySelector(id).setAttribute("class", "tab-pane fade show active");
+    }
+}
