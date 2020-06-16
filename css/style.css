@@ -61,3 +61,8 @@
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
+body {
+  background-image: url("/../images/paper_background.jpg");
+  background-color: #cccccc;
+}
