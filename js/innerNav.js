@@ -11,9 +11,9 @@ window.onload = function() {
     //peoples of khaldun page
     const cultureTypes = ["ceyah", "kohan", "fallen"];
     const ceyahHeroes = ["Astarte", "Belphegor", "Divsha", "Hasanko", "Lazarus", "Melchior", "Praxus", "Sahrbon", "Sebak", "Sijansur", "Vandal", "Vulgari"];
-    const royalistHeroes = [];
-    const nationalistHeroes = [];
-    const councilHeroes = [];
+    
+    //races of khaldun page
+    const raceTypes = ["Aasimar", "Changeling", "Dragonborn", "Dwarf", "Elf", "Gnome", "Goblin", "Half_Elf", "Half_Orc", "Halfling", "Hobgoblin", "Human", "Lizardfolk", "Loxodon", "Orc", "Tabaxi", "Tiefling", "Tortle"];
     
     const urlString = window.location.href;
     const brokenUrl = urlString.split("#");
@@ -49,8 +49,11 @@ window.onload = function() {
             document.querySelector("#kohan").setAttribute("class", "tab-pane fade");
             document.querySelector("#fallen").setAttribute("class", "tab-pane fade");
         }
+        else if (raceTypes.includes(brokenUrl[1])) {
+            baseId = "#Aasimar";
+        }
         else {
-            baseId = "#test1";
+            baseId = "#";
         }
 
         let baseController = baseId + "-control";
