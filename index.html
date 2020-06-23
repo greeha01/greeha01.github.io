@@ -1,12 +1,11 @@
 <html>
     <head>
-        <title>Home Page | Khald&ucircn Documentation Wiki</title>
+        <title>World Map | Khald&ucircn Documentation Wiki</title>
         <link rel="stylesheet" href="/css/bootstrap.css" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <script src="/js/script.js"></script>
-        <script src="/js/innerNav.js"></script>
         <!-- Side navigation -->
         <div class="sidebar" id="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -25,22 +24,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarMapDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maps</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarMapDropdown">
-                                <a class="dropdown-item" href="/pages/maps/starting_islands.html">Starting Islands</a>
-                                <a class="dropdown-item" href="/pages/maps/world_map.html">World</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarStartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Starting Islands</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarStartDropdown">
-                                <a class="dropdown-item" href="/pages/starting_islands/kriti.html">Kriti</a>
-                                <a class="dropdown-item" href="/pages/starting_islands/thanisi.html">Thanisi</a>
-                                <a class="dropdown-item" href="/pages/starting_islands/kyklisi.html">Kyklisi</a>
-                                <a class="dropdown-item" href="/pages/starting_islands/roovnisi.html">Roovnisi</a>
-                            </div>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" id="navbarLoreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lore</a>
                             <div class="dropdown-menu" aria-labelledby="navbarLoreDropdown">
@@ -63,7 +46,7 @@
                                 <a class="dropdown-item" href="/pages/landmasses/haven.html">Haven</a>
                                 <a class="dropdown-item" href="/pages/landmasses/infinite_atoll.html">Infinite Atoll</a>
                                 <a class="dropdown-item" href="/pages/landmasses/istira.html">Istira</a>
-                                <a class="dropdown-item" href="/pages/landmasses/magnus_archipelago.html">Magnus Archipelago</a>
+                                <a class="dropdown-item" href="/pages/landmasses/magnus_archipelago.html">Magnus' Archipelago</a>
                                 <a class="dropdown-item" href="/pages/landmasses/widestable_island.html">Widestable Island</a>
                             </div>
                         </li>
@@ -83,98 +66,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/pages/contact.html">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/changelog.html">Changelog</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
-        <br>
+            <br>
 
-        <div class=row>
-            <div class="col-2 border-right border-dark">
-                <ul class="nav nav-tabs nav-pills flex-column bg-dark rounded">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#v1" id="v1-control" data-toggle=tab>v1.0.0</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#v2" id="v2-control" data-toggle="tab">v2.0.0</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-10">
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="v1" role=tabpanel>
-                        <h4 class="text-center border-top border-bottom border-dark pt-3 pb-3">v1.0.0</h4>
-                        <p class="border-bottom border-dark pb-3">Version v1.0.0 will contain the basic information needed for players for the upcoming campaign playing in this world. Namely,
-                        v1.0.0 will have information regarding Hasanko's Archipelago (the starting islands), the lore (every page in that category),
-                        the maps (world and Hasanko's Archipelago) and the reference page. In fact, players should have enough information to create characters
-                        at this stage of the website (although the DM will not have the information to run a campaign - see <a href="#v2" onclick="switchNav(null, '#v2')">v2.0.0).</a><br><br>
-
-                        <b class="text-danger">At the moment, there are 4 items on my checklist that still need to be done before this the full release of v1.0.0 occurs.</b>
-                        </p>
-
-                        <h4>Changelog</h4>
-                        <p class="border-bottom border-dark pb-3"><b>It should be noted that changed prior to v0.1.0 are not logged</b></p>
-
-                        <h5>0.4.0</h5>
-                        <p class="font-weight-light">Generally speaking, the pages in the "Lore" section are complete. There may be smaller changes here or there, but there should not be any major changes left in that section.</p>
-                        <p class="border-bottom border-dark pb-3">Finished up the <a href="/pages/lore/races_of_khaldun.html">Races of Khald&ucircn</a> page.<br>
-                        Changed some <a href="/pages/lore/people_of_khaldun.html">names</a>.
-                        </p>
-
-                        <h5>0.3.1</h5>
-                        <p class="border-bottom border-dark pb-3">Started working on the <a href="/pages/lore/races_of_khaldun.html">Races of Khald&ucircn</a> page<br>
-                        Changed background of the site</p>
-
-                        <h5>0.3.0</h5>
-                        <p class="border-bottom border-dark pb-3">Edited <a href="/pages/lore/people_of_khaldun.html#fiden">Fiden</a> and <a href="/pages/lore/people_of_khaldun.html#fallen">Fallen</a>
-                        sections of the <a href="/pages/lore/people_of_khaldun.html">Peoples of Khald&ucircn</a> page.</p>
-
-                        <h5>0.2.1</h5>
-                        <p class="border-bottom border-dark pb-3">Changed the layout of the home, <a href="/pages/lore/dieties.html">Diety</a>, <a href="/pages/lore/divine_history.html">Divine History</a> pages.<br>
-                        Edited <a href="/pages/lore/people_of_khaldun.html#ventusi">Ventusi</a> on the <a href="/pages/lore/people_of_khaldun.html">Peoples of Khald&ucircn</a> page and redid layout to fit the site.</p>
-
-                        <h5>0.2.0</h5>
-                        <p class="border-bottom border-dark pb-3">Edited and changed a number of items on the <a href="/pages/lore/dieties.html">dieties</a> page.<br>
-                        Made some edits to the <a href="/pages/lore/divine_history.html">Divine History</a> page.<br>
-                        Added some more references to the <a href="/pages/references.html">references</a> page.
-                        Updated layout to the <a href=#>home page</a>.</p>
-
-                        <h5>0.1.4</h5>
-                        <p class="border-bottom border-dark pb-3">Started editing pages and adding in links.<br>
-                        Added a <a href="/pages/references.html">references</a> page.
-                        </p>
-
-                        <h5>0.1.3</h5>
-                        <p class="border-bottom border-dark pb-3">Finished basic descriptions of Ventusi heroes (People of Khald&ucircn)<br>
-                        Added basic description of Fiden and Fallen
-                        </p>
-
-                        <h5>0.1.2</h5>
-                        <p class="border-bottom border-dark pb-3">Added descriptions to 3 more Ventusi heroes (People of Khald&ucircn)<br>
-                        Navigation bar update
-                        </p>
-
-                        <h5>0.1.1</h5>
-                        <p class="border-bottom border-dark pb-3">Changed Dieties and People of Khald&ucircn page layout<br>
-                        Slight lore update to Divsha
-                        </p>
-
-                        <h5>0.1.0</h5>
-                        <p class="border-bottom border-dark pb-3">Added changelog<br>
-                        Started notes for Ventusi heroes</p>
-                    </div>
-                    <div class="tab-pane fade" id="v2" role=tabpanel>
-                        <h4 class="text-center border-top border-bottom border-dark pt-3 pb-3">v2.0.0</h4>
-                        <p class="border-bottom border-dark pb-3">Version v2.0.0 will add in the DM information needed to run a campaign centered around Hasanko's Archipelago. For the most part,
-                        many of the changes (if not all) will not be visible to non-DMs.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
+            <figure class="figure">
+                <img src="/images/maps/world_map.png" class="figure-img img-fluid rounded" alt="World map">
+                <figcaption class="figure-caption text-center">The world of Khald&ucircn</figcaption>
+            </figure>
         <div id=bottom></div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
