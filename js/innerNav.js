@@ -9,8 +9,8 @@ window.onload = function() {
     const divine_history = ["beginning", "betrayal", "war"];
 
     //peoples of khaldun page
-    const cultureTypes = ["ceyah", "kohan", "fallen"];
-    const ceyahHeroes = ["Astarte", "Belphegor", "Divsha", "Hasanko", "Lazarus", "Melchior", "Praxus", "Sahrbon", "Sebak", "Sijansur", "Vandal", "Vulgari"];
+    const cultureTypes = ["ventusi", "fiden", "fallen"];
+    const ceyahHeroes = ["Ermitana", "Flaminus", "Ariel", "Divinus", "Maximillan", "Magnus", "Cobalus", "Excelsis", "Venemor", "Lacertae", "Protegitom", "Legator"];
     
     //races of khaldun page
     const raceTypes = ["Aasimar", "Changeling", "Dragonborn", "Dwarf", "Elf", "Gnome", "Goblin", "Half_Elf", "Half_Orc", "Halfling", "Hobgoblin", "Human", "Lizardfolk", "Loxodon", "Orc", "Tabaxi", "Tiefling", "Tortle"];
@@ -36,10 +36,10 @@ window.onload = function() {
             baseId = "#beginning";
         }
         else if (cultureTypes.includes(brokenUrl[1])) {
-            baseId = "#ceyah";
+            baseId = "#ventusi";
         }
         else if (ceyahHeroes.includes(brokenUrl[1])) {
-            baseId = "#Astarte";
+            baseId = "#Ermitana";
 
             document.querySelector("#ceyah-control").setAttribute("class", "nav-link active");
             document.querySelector("#kohan-control").setAttribute("class", "nav-link");
