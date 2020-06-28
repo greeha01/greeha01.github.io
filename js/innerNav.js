@@ -14,6 +14,9 @@ window.onload = function() {
     
     //races of khaldun page
     const raceTypes = ["Aasimar", "Changeling", "Dragonborn", "Dwarf", "Elf", "Gnome", "Goblin", "Half_Elf", "Half_Orc", "Halfling", "Hobgoblin", "Human", "Lizardfolk", "Loxodon", "Orc", "Tabaxi", "Tiefling", "Tortle"];
+
+    //Divinus' Archipelago page
+    const kritiCat = ["Kriti_desc", "Kissamo", "Samar", "Rethimno", "Chania", "Lentas", "Bal", "Choru", "Spathi", "Palocho"]
     
     const urlString = window.location.href;
     const brokenUrl = urlString.split("#");
@@ -41,19 +44,33 @@ window.onload = function() {
         else if (ceyahHeroes.includes(brokenUrl[1])) {
             baseId = "#Ermitana";
 
-            document.querySelector("#ceyah-control").setAttribute("class", "nav-link active");
-            document.querySelector("#kohan-control").setAttribute("class", "nav-link");
+            document.querySelector("#ventusi-control").setAttribute("class", "nav-link active");
+            document.querySelector("#fiden-control").setAttribute("class", "nav-link");
             document.querySelector("#fallen-control").setAttribute("class", "nav-link");
 
-            document.querySelector("#ceyah").setAttribute("class", "tab-pane fade show active");
-            document.querySelector("#kohan").setAttribute("class", "tab-pane fade");
+            document.querySelector("#ventusi").setAttribute("class", "tab-pane fade show active");
+            document.querySelector("#fiden").setAttribute("class", "tab-pane fade");
             document.querySelector("#fallen").setAttribute("class", "tab-pane fade");
         }
         else if (raceTypes.includes(brokenUrl[1])) {
             baseId = "#Aasimar";
         }
+        else if (kritiCat.includes(brokenUrl[1])) {
+            baseId = "#Kriti_desc";
+
+            document.querySelector("#Kriti-control").setAttribute("class", "nav-link active");
+            document.querySelector("#Kyklisi-control").setAttribute("class", "nav-link");
+            document.querySelector("#Roovnisi-control").setAttribute("class", "nav-link");
+            document.querySelector("#Thanisi-control").setAttribute("class", "nav-link");
+
+            document.querySelector("#Kriti").setAttribute("class", "tab-pane fade show active");
+            document.querySelector("#Kyklisi").setAttribute("class", "tab-pane fade");
+            document.querySelector("#Roovnisi").setAttribute("class", "tab-pane fade");
+            document.querySelector("#Thanisi").setAttribute("class", "tab-pane fade");
+        }
         else {
-            baseId = "#";
+            console.log("Could not find tag with id = " + brokenUrl[1]);
+            return null;
         }
 
         let baseController = baseId + "-control";
