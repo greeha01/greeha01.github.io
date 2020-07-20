@@ -16,7 +16,8 @@ window.onload = function() {
     const raceTypes = ["Aasimar", "Changeling", "Dragonborn", "Dwarf", "Elf", "Gnome", "Goblin", "Half_Elf", "Half_Orc", "Halfling", "Hobgoblin", "Human", "Lizardfolk", "Loxodon", "Orc", "Tabaxi", "Tiefling", "Tortle"];
 
     //Divinus' Archipelago page
-    const kritiCat = ["Kriti_desc", "Kissamo", "Samar", "Rethimno", "Chania", "Lentas", "Bal", "Choru", "Spathi", "Palocho"]
+    const kritiCat = ["Kriti_desc", "Kissamo", "Samar", "Rethimno", "Chania", "Lentas", "Bal", "Choru", "Spathi", "Palocho"];
+    const divinusCat = ["Kriti", "Kyklisi", "Roovnisi", "Thanisi"];
     
     const urlString = window.location.href;
     const brokenUrl = urlString.split("#");
@@ -67,6 +68,9 @@ window.onload = function() {
             document.querySelector("#Kyklisi").setAttribute("class", "tab-pane fade");
             document.querySelector("#Roovnisi").setAttribute("class", "tab-pane fade");
             document.querySelector("#Thanisi").setAttribute("class", "tab-pane fade");
+        }
+        else if (divinusCat.includes(brokenUrl[1])) {
+            baseId = "#Kriti";
         }
         else {
             console.log("Could not find tag with id = " + brokenUrl[1]);
