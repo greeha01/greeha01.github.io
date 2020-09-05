@@ -18,6 +18,9 @@ window.onload = function() {
     //Divinus' Archipelago page
     const kritiCat = ["Kriti_desc", "Kissamo", "Samar", "Rethimno", "Chania", "Lentas", "Bal", "Choru", "Spathi", "Palocho"];
     const divinusCat = ["Kriti", "Kyklisi", "Roovnisi", "Thanisi"];
+
+    //The Oppressed Wrath page
+    const owChapters = ['introduction', 'chapter_1'];
     
     const urlString = window.location.href;
     const brokenUrl = urlString.split("#");
@@ -71,6 +74,9 @@ window.onload = function() {
         }
         else if (divinusCat.includes(brokenUrl[1])) {
             baseId = "#Kriti";
+        }
+        else if (owChapters.includes(brokenUrl[1])) {
+            baseId = "#introduction";
         }
         else {
             console.log("Could not find tag with id = " + brokenUrl[1]);
